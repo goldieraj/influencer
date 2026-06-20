@@ -71,10 +71,10 @@ Static images maintain the audience; video (Reels/TikToks) grows the audience.
 
 Based on analysis of 100+ top accounts, these formats drive the highest engagement:
 
-### Format 1: The "Activity" Reel (Highest Growth)
+### Format 1: The "Activity" Reel (Highest Growth via Plausible Deniability)
 - **Concept:** The character doing something normal, not just posing.
-- **Examples:** Shooting a basketball, cooking, doing yoga, walking a dog.
-- **Why it works:** Bypasses the "AI radar" because people focus on the action, not just the face. Feels authentic.
+- **The Strategy:** Use the **"Bodysuit Uniform"** strategy (@queenkalin). Generate the character in a one-piece bodysuit/leotard doing a specific activity (soccer, handstand, stretching). The activity gives the algorithm a reason to push the video, while the bodysuit provides the visual hook.
+- **Why it works:** Bypasses the "AI radar" and shadowbans because the algorithm categorizes it as sports/challenge content.
 - **Execution:** Generate an image of the action, use I2V to add subtle motion, add environmental sound design.
 
 ### Format 2: The "Mirror Selfie" (Highest Conversion)
@@ -92,7 +92,13 @@ Based on analysis of 100+ top accounts, these formats drive the highest engageme
 - **Why it works:** Breaks the "perfect Instagram model" mold. Builds parasocial connection.
 - **Execution:** Prompt for `candid, blurry background, motion blur, looking away from camera, laughing`.
 
-## 4. Quality Control & Metadata Stripping (CRITICAL)
+## 4. The 60/40 Personality-to-Body Ratio
+
+To achieve mega-viral status (@athenaparissss model), you must balance your content:
+*   **60% Personality/Humor:** POV text overlays, relatable "girl problems," lifestyle vlogs. This builds the parasocial relationship and algorithmic trust.
+*   **40% Body/Conversion:** Mirror selfies, bikini shots, highly suggestive content. This converts the audience built by the personality content.
+
+## 5. Quality Control & Metadata Stripping (CRITICAL)
 
 Before any image touches a social platform, it must pass this checklist and be stripped of AI metadata.
 
@@ -117,9 +123,9 @@ Before posting ANY piece of content, verify:
 - [ ] **Background:** Are there weird AI artifacts in the background (fused objects, floating items)? (Crop them out or blur them).
 - [ ] **Consistency:** Does this look exactly like the character from yesterday's post?
 
-## 5. Posting Schedule & Ratios
+## 6. Posting Schedule & Ratios
 
-- **Frequency:** 1 Reel daily + 1 Static Post/Carousel every 2 days.
+- **Frequency:** 3-5 Reels daily (CRITICAL for algorithmic growth) + 1 Static Post/Carousel every 2 days.
 - **Stories:** 3-5 Stories daily (mix of lifestyle, Q&A, and subtle funnel links).
 - **Content Mix:**
   - 60% SFW Lifestyle/Activity (Growth content)
