@@ -18,25 +18,33 @@ Before generating any content, understand the hierarchy of realism. The goal is 
 
 ### Step 1: Base Image Generation (Text-to-Image)
 1. **Model:** Flux.1 Dev (or a specialized fine-tune like Juggernaut XL if using SDXL).
-2. **LoRA:** Load your custom character LoRA (weight 0.7-0.9 to avoid deep-frying).
-3. **Prompting Structure:**
-   - **Subject:** `[Character Name] woman, 22yo, [ethnicity], [hair style/color], [eye color]`
-   - **Action/Pose:** `taking a mirror selfie, holding phone, casual posture`
-   - **Outfit:** `wearing oversized grey sweatpants, black crop top`
-   - **Environment:** `in a messy bedroom, natural light from window`
-   - **Quality/Style:** `raw photo, smartphone photo, candid, flash photography, realistic skin texture, film grain`
+2. **LoRA:** Load your custom character LoRA (weight 0.7-0.9 to avoid deep-frying). **CRITICAL: All LoRA training images MUST be generated on a mid-gray seamless background, NOT white. White backgrounds cause the model to output plastic, over-lit, AI-portrait looks. Gray gives the model a value to read skin tones against and lets shadows work naturally.**
+3. **Prompting Structure (UGC-Adapted Cinema Grammar):**
+   - **Frame Map:** Anchor subjects spatially first. `Subject centered in mirror, phone visible at chest, bathroom tiles behind.`
+   - **Subject Lock:** Describe identity + state. Trust the LoRA/reference for the face. `[Character Name] woman, 22yo, [ethnicity], [hair style/color], [eye color].`
+   - **Action/Pose:** Positive locks only. `taking a mirror selfie, holding phone, casual posture.`
+   - **Outfit:** `wearing oversized grey sweatpants, black crop top.`
+   - **Environment/Volumetrics:** Give the air texture. `in a messy bedroom, natural room haze, dust particles in sunlight from window.`
+   - **Anti-Plastic Skin (MANDATORY):** `zero specular shine on forehead and nose bridge, real peach fuzz visible at jawline, subsurface scattering, genuine matte human skin texture.`
+   - **Camera Behavior:** `shot on iPhone 15 Pro, natural daylight, slightly overexposed, casual angle, flash photography, film grain.`
 4. **Settings:**
    - Steps: 20-30
    - CFG: 3.0-4.0 (lower CFG = more realism with Flux)
    - Sampler: euler
    - Scheduler: simple
 
-### Step 2: Pose Control (Optional but Recommended)
-If you need a specific pose (e.g., for a brand deal or specific trend):
+### Step 2: The Outfit Swap Technique (For OOTD / Specific Fits)
+If you need the character in a highly specific outfit (e.g., for a brand deal or complex fashion post):
+1. Generate the desired outfit on a generic model against a mid-gray background.
+2. Run the "Outfit Swap" workflow: Replace the generic model's face and body with your character's identity while keeping the outfit exactly the same.
+3. **Logic:** "Replace the character in Image 1 with the character in Image 2. Keep the outfit and pose from Image 1 exactly. Match the face, bone structure, body type, skin tone, and hair from Image 2."
+
+### Step 2.5: Pose Control (Optional but Recommended)
+If you need a specific pose:
 1. Find a reference image of a real person in the desired pose.
 2. Run it through the OpenPose preprocessor node in ComfyUI.
 3. Feed the OpenPose skeleton into a ControlNet node connected to your base model.
-4. Set ControlNet strength to 0.6-0.8 (allows some flexibility while maintaining the general pose).
+4. Set ControlNet strength to 0.6-0.8.
 
 ### Step 3: Facial Consistency Enforcement (IP-Adapter)
 Even with a LoRA, faces can drift. Use IP-Adapter to lock it in:

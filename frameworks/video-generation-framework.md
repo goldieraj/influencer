@@ -34,10 +34,10 @@ Your video will only be as good as the image you start with.
 
 ### Phase 2: Animation (Using Wan 2.1 in ComfyUI)
 1. Load the Wan 2.1 Image-to-Video workflow in ComfyUI.
-2. Input your perfect base image.
-3. **The Motion Prompt:** Do not describe the character again. Describe ONLY the motion.
-   - *Good Prompt:* `subtle breathing, slight hair movement in the wind, camera slowly panning right, soft blinking`
-   - *Bad Prompt:* `a beautiful blonde woman walking down the street smiling and waving at the camera`
+2. **Reference Order Discipline:** If using multiple references (e.g., face ref + outfit ref + pose ref), upload them in a strict numbered sequence and use `@image1`, `@image2` tags in your prompt to explicitly lock traits to specific images.
+3. **The Motion Prompt (Positive Locks Only):** Describe the motion using positive locks. Do not use negative prohibitions.
+   - *Good Prompt (Positive Lock):* `@image1 keeps the same face, hair, and wardrobe throughout. Subtle breathing, slight hair movement in the wind, camera slowly panning right, soft blinking. Boots stay planted on the same ground marks.`
+   - *Bad Prompt (Negative Prohibition):* `Don't change the face, don't move the feet, don't morph the background.`
 4. **Motion Scale/CFG:** Keep motion scale low (usually around 3.0-5.0). You want subtle, realistic movement, not chaotic morphing.
 5. Generate a 3-5 second clip. (Most viral reels are under 7 seconds anyway).
 
@@ -48,13 +48,14 @@ Your video will only be as good as the image you start with.
 3. **Re-apply LoRA:** The FaceDetailer will detect the face in every frame, re-apply your specific Flux Character LoRA, and paste it back.
 4. **Recompile:** Recombine the frames into a video. This guarantees 100% facial consistency throughout the motion.
 
-### Phase 3: Post-Production (The Secret Sauce)
-Raw AI video often looks "too smooth" or plastic. Post-production is where you sell the illusion.
+### Phase 3: Post-Production (The 70/30 Rule)
+**CRITICAL MINDSET:** AI only gets video to 70% realism. The remaining 30% of realism comes from traditional post-production. Raw AI video often looks "too smooth" or plastic. The edit bay is where you sell the illusion.
 1. Import the clip into CapCut or Premiere.
 2. **Add Film Grain:** Add 10-15% film grain. This hides AI smoothing artifacts and makes it look like it was shot on a phone.
 3. **Add Camera Shake:** Add a very subtle "handheld camera" effect. Perfect tripod stability screams "AI."
-4. **Color Grading:** Apply a slight filter (e.g., VSCO-style) to unify the colors.
+4. **Color Grading:** Apply a slight filter (e.g., VSCO-style) to unify the colors and shift away from the default AI color science.
 5. **Speed Ramping:** If the AI motion is slightly unnatural, speed it up by 1.2x or slow it down by 0.8x to hide the imperfections.
+6. **Cut Bad Frames:** Ruthlessly cut any frames where the face morphs or fingers blend. A 2-second perfect clip is infinitely better than a 4-second clip that breaks the illusion at the end.
 
 ## 4. The Audio Strategy
 
