@@ -41,6 +41,13 @@ Your video will only be as good as the image you start with.
 4. **Motion Scale/CFG:** Keep motion scale low (usually around 3.0-5.0). You want subtle, realistic movement, not chaotic morphing.
 5. Generate a 3-5 second clip. (Most viral reels are under 7 seconds anyway).
 
+### Phase 2.5: The VACE Protocol (Fixing Facial Morphing)
+**CRITICAL:** Wan 2.1 and Kling often cause the character's face to morph or lose consistency during movement. You MUST fix this before posting.
+1. **Extract Frames:** Extract the generated video into individual PNG frames.
+2. **Batch FaceDetailer:** Run the image sequence through a ComfyUI batch `FaceDetailer` workflow.
+3. **Re-apply LoRA:** The FaceDetailer will detect the face in every frame, re-apply your specific Flux Character LoRA, and paste it back.
+4. **Recompile:** Recombine the frames into a video. This guarantees 100% facial consistency throughout the motion.
+
 ### Phase 3: Post-Production (The Secret Sauce)
 Raw AI video often looks "too smooth" or plastic. Post-production is where you sell the illusion.
 1. Import the clip into CapCut or Premiere.

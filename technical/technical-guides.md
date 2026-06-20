@@ -37,6 +37,18 @@ For the highest realism in 2026, you must use Flux.
 
 ---
 
+## Part 1.5: The Flux + SDXL Hybrid Workflow (CRITICAL)
+
+**The Problem:** Flux generates incredible skin texture and realism, but its IP-Adapters and ControlNets are currently weak, leading to poor character consistency in complex poses. SDXL has perfect IP-Adapters but looks slightly less realistic.
+
+**The Solution (The Hybrid Pipeline):**
+1. **Base Generation:** Generate the body and complex pose using SDXL with SDXL OpenPose ControlNet and SDXL IP-Adapter (to get the anatomy and pose exactly right).
+2. **Facial Composite:** Pass the generated image into a `FaceDetailer` node.
+3. **The Flux Pass:** Configure the `FaceDetailer` to use your Flux.1 [dev] model + your custom Flux Character LoRA.
+4. **Result:** You get the perfect pose control of SDXL combined with the hyper-realistic, consistent face of Flux.
+
+---
+
 ## Part 2: Character LoRA Training Guide
 
 A LoRA (Low-Rank Adaptation) is how you teach the AI what your specific character looks like. Without a good LoRA, your character will look like a different person in every photo.

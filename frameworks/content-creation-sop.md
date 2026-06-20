@@ -84,7 +84,20 @@ Based on analysis of 100+ top accounts, these formats drive the highest engageme
 - **Why it works:** Breaks the "perfect Instagram model" mold. Builds parasocial connection.
 - **Execution:** Prompt for `candid, blurry background, motion blur, looking away from camera, laughing`.
 
-## 4. Quality Control Checklist
+## 4. Quality Control & Metadata Stripping (CRITICAL)
+
+Before any image touches a social platform, it must pass this checklist and be stripped of AI metadata.
+
+### The Metadata Vulnerability
+Instagram, TikTok, and Pinterest actively scan uploads for C2PA, XMP, and EXIF metadata embedded by ComfyUI, Stable Diffusion, and Photoshop. If found, your post is automatically labeled "Made with AI," which suppresses reach and destroys the illusion.
+
+**Mandatory Upload Prep:**
+1. Generate final image.
+2. Go to [removeailabel.com](https://removeailabel.com/) or [aimetadatacleaner.com](https://aimetadatacleaner.com/).
+3. Upload image and strip all C2PA, XMP, and PNG text chunks.
+4. Download the cleaned image. *This is the only file you upload.*
+
+### Visual QC Checklist
 
 Before posting ANY piece of content, verify:
 

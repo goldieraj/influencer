@@ -75,7 +75,14 @@ Scammers frequently steal AI model images and create fake Telegram groups to sca
 - Put "I DO NOT USE TELEGRAM" in your bio.
 - This signals to Instagram that you are a legitimate creator trying to protect users, which increases account trust score.
 
-### 3. The Backup Account Strategy
+### 3. Device & Network Isolation (CRITICAL)
+The June 2026 ban waves rely heavily on device fingerprinting and IP tracking. If you run 5 AI accounts from the same phone/IP and one gets banned, the other 4 will be instantly nuked.
+- **Antidetect Browsers:** Use GoLogin, Multilogin, or Dolphin Anty to create isolated browser profiles for each character.
+- **Residential Proxies:** Assign a dedicated, static residential proxy (e.g., from IPRoyal or Smartproxy) to each profile. NEVER use datacenter proxies or VPNs.
+- **Phone Verification:** Use physical SIM cards (not VOIP numbers like Google Voice) to verify each account. Keep the SIM cards active.
+- **The Golden Rule:** 1 Character = 1 Browser Profile = 1 Proxy = 1 Phone Number = 1 Email Address. NEVER cross-contaminate.
+
+### 4. The Backup Account Strategy
 Always have a "Backup" or "VIP" account linked in the bio of the main account (e.g., @maincharacter and @maincharacter.vip).
 - Keep the VIP account private.
 - Accept follow requests manually.
