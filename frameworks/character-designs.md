@@ -4,9 +4,9 @@ This document defines 5 distinct AI influencer characters designed to operate as
 
 ---
 
-## Character 1: "Mei Lin" — The Asian Fitness Goddess
+## Character 1: "Mei Lin" — The Sweaty Tryhard (Asian Fitness)
 
-**Positioning:** Closest to Aiko.Asia's proven model. East Asian (Chinese/Korean mixed), 24 years old, based in "Los Angeles." Fitness-first content with swimwear and athleisure. The aspirational gym girl next door.
+**Positioning:** An evolution of Aiko.Asia's model, but pushed further. East Asian (Chinese/Korean mixed), 24 years old, based in "Los Angeles." The core hook is *exertion and activity*. She doesn't just pose in the gym; she trains hard. Sweaty, flushed skin, messy hair, and dynamic, suggestive angles (like bending over to adjust wraps, or rear-angle shots mid-kick). She practices Muay Thai/Kickboxing as a unique differentiator.
 
 | Attribute | Detail |
 |-----------|--------|
@@ -14,12 +14,12 @@ This document defines 5 distinct AI influencer characters designed to operate as
 | Age | 24 |
 | Location | Los Angeles, CA |
 | Body Type | Athletic, toned, slim-thick |
-| Hair | Long, straight, black with subtle highlights |
-| Signature Look | High-waisted leggings, sports bras, minimal makeup |
-| Personality | Disciplined but playful, posts gym progress, smoothie recipes, "day in my life" |
-| Content Mix | 60% fitness/gym, 25% swimwear/beach, 15% lifestyle/food |
-| Monetization | Fanvue (fitness → lingerie → explicit escalation) |
-| Comparable Accounts | @aiko.asia, @fit_aitana, @aditi.aimuse |
+| Hair | Long, straight, black. Often tied up messily or sticking to sweat. |
+| Signature Look | Muay Thai shorts, sports bras, hand wraps, high-waisted leggings |
+| The "Edge" / Hook | Sweaty, flushed skin, mid-action martial arts, "accidental" low/rear angles |
+| Content Mix | 60% intense fitness/Muay Thai (suggestive angles), 25% recovery/shower/locker room, 15% lifestyle |
+| Monetization | Fanvue (sweaty gym → locker room → explicit escalation) |
+| Comparable Accounts | @aiko.asia, @joanne.kisses, @lilithhberry |
 
 **LoRA Training Notes:** Train on 40-50 images showing varied lighting (gym fluorescent, golden hour outdoor, bathroom mirror). Include at least 10 close-up face shots, 15 full-body gym poses, 10 swimwear/beach, 5 casual lifestyle. Maintain consistent facial features: high cheekbones, almond eyes, natural brows.
 
@@ -88,9 +88,9 @@ This document defines 5 distinct AI influencer characters designed to operate as
 
 ---
 
-## Character 5: "Yuki Tanaka" — The Anime-Adjacent E-Girl
+## Character 5: "Yuki Tanaka" — The Messy Cybergoth Gamer
 
-**Positioning:** Japanese aesthetic, 21 years old, based in "Tokyo." Bridges the gap between hyperrealistic and anime. Cosplay, gaming, kawaii fashion. Targets the weeb/otaku audience that overlaps heavily with the AI art community.
+**Positioning:** Japanese aesthetic, 21 years old, based in "Tokyo." This is NOT a wholesome "kawaii" e-girl. The hook is the "messy, hasn't slept in 2 days playing Valorant" vibe. Darker rooms, screen glow, messy hair, oversized clothes slipping off the shoulder. A grungier, more intimate, and highly suggestive take on the gamer girl trope.
 
 | Attribute | Detail |
 |-----------|--------|
@@ -98,12 +98,12 @@ This document defines 5 distinct AI influencer characters designed to operate as
 | Age | 21 |
 | Location | Tokyo, Japan |
 | Body Type | Petite, slim |
-| Hair | Changes frequently: pink, purple, black with colored streaks (rotation = content variety) |
-| Signature Look | Oversized hoodies, thigh-highs, chokers, colored contacts, cat ears |
-| Personality | Shy online but bold in photos, posts gaming setups, cosplay, "aesthetic" room tours |
-| Content Mix | 40% cosplay/themed shoots, 30% gaming/setup, 20% kawaii fashion, 10% "day in Tokyo" |
-| Monetization | Patreon + Fanvue (cosplay → lewd cosplay → explicit escalation) |
-| Comparable Accounts | @kimochii_ai, @mekahime.inc, anime AI accounts |
+| Hair | Changes frequently (pink, purple, black), but always messy, unwashed look |
+| Signature Look | Oversized graphic tees (slipping off), thigh-highs, chokers, heavy eyeliner, smudged makeup |
+| The "Edge" / Hook | Intimate, messy bedroom/desk shots, harsh flash mirror selfies, "caught changing" or "fell asleep at desk" |
+| Content Mix | 50% messy gaming setup/bedroom (suggestive), 30% dark aesthetic mirror selfies, 20% edgy cosplay |
+| Monetization | Patreon + Fanvue (messy gamer → lewd cosplay → explicit escalation) |
+| Comparable Accounts | @noctra.lenoir (for the dark vibe), edgy e-girl accounts |
 
 **LoRA Training Notes:** This character allows more stylistic flexibility since the audience expects some "unrealness." Train on 40 images mixing hyperrealistic face with slightly stylized body proportions (larger eyes acceptable). Include 10 close-ups (various hair colors), 10 cosplay outfits, 10 casual/gaming, 10 fashion. The hair color changes are a FEATURE — each color can be a different "era" that drives engagement.
 
